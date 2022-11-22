@@ -12,7 +12,6 @@ import mail from "./mail.png"
 import locate from "./locate.svg";
 import phonecall from "./phonecall.svg";
 import verticalLine from "./verticalLine.svg";
-
 import avt1 from "./avt1.jpg";
 import avt4 from "./avt4.jpg";
 import arrDown from "./arrowDown.png";
@@ -22,6 +21,8 @@ import fbic from "./facebook.jpg";
 import inic from "./ins.jpg";
 import spalgTS from "./spalh-trongsuot.jpg";
 import fb1 from "./fb1.jpg";
+import banner from "./banner.jpg";
+
 import "./Home.css";
 import {Route} from 'react-router-dom';
 import React, { Component } from 'react';
@@ -63,14 +64,20 @@ const Home = () => {
         </div>
     </header> */}
       <div className="header">
-        <div className="overlayHeader"></div>
-        <img className="header-img" src={bhHome} alt="hinhSpa" />
-        <img className=" header-logo spaLogo" src={spalg} alt="PUN" />
+        {/* <div className="overlayHeader"></div> */}
+        <img className="header-img" src={banner} alt="hinhSpa" />
+        <img className=" header-logo spaLogo" src={spalgTS} alt="PUN" />
 
-        <img className=" header-logo textLogo" src={bg} alt="PUN" />
+    <h1 className="PU">PHUONGUYEN NGUYEN</h1>
+    <p className="NU">BEAUTY AND SPA</p>
         
       </div>
       <div className="about-us">
+      <div className="text-aboutUs">
+      <h2 className="textAU">ABOUT US</h2>
+      <hr className="line-aboutus"/>
+
+      </div>
         <div className="AVT">
           <div className="fadein">
             <img className=" avt f3" src={avt} />
@@ -91,7 +98,11 @@ const Home = () => {
         </div>
       </div>
       <div className="cac-dich-vu">
-        <h2 className="title-DV">Các dịch vụ </h2>
+        <div className="text-aboutUs text-dv">
+      <h2 className="textAU text-cdv">Các dịch vụ</h2>
+      <hr className="line-aboutus line-dv"/>
+
+      </div>
         <div className="DV-Box">
           <div className="DV Chan-may">
             <div className="overlay"></div>
@@ -157,6 +168,7 @@ const Home = () => {
       <div className="container">
       <div className="title-feedback">
       <h2 className="title-feedback2">FEEDBACK</h2>
+      <hr className="line-feedback" />
       <p>Những phản hồi từ các khách hàng về dịch vụ của chúng tôi</p>
       </div>
         <div className="content-slider">
@@ -230,7 +242,13 @@ const Home = () => {
         </div>
       </div>
       <div className="TV">
-      <h2 className="tv-main">TƯ VẤN</h2>
+      <div className="title-feedback">
+      <h2 className="title-feedback2 title-tv1">TƯ VẤN</h2>
+      {/* <h2 className="title-feedback2">FEEDBACK</h2> */}
+      <hr className="line-feedback line-tv" />
+
+      </div>
+     
         <div className="hinh-anh-TV">
           <img className="skincare-image" src={skincare1} />
           <h1 className="title-tv">FOR SPA </h1>

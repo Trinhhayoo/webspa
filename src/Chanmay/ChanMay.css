@@ -1,4 +1,18 @@
 .ChanMay-container {
     position: relative;
-    margin-bottom: 170px;
+    /* margin-bottom: 170px; */
+    width: 100%;
+    height: 2000px;
+    background-image: url('https://i.pinimg.com/564x/b8/79/67/b8796721769c25191c6dfa94fdea78eb.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    z-index: -1;
+}
+.wrap-chanmay {
+    padding: 20px 10px;
 }

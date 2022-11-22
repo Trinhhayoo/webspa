@@ -7,6 +7,33 @@ import bg from "../tenLG.png";
 import spalg from "../spalg.jpg";
 import "./Navigation.css";
 function Navbar() {
+  const menuItems = [
+    'Chân Mày', 'Môi', 'Triệt Lông', 'Trị Mụn', 'Chăm Sóc Da', 'Về chúng tôi'
+ ];
+ 
+ class MenuExample extends React.Component {
+ 
+   _handleClick(menuItem) { 
+     this.setState({ active: menuItem });
+   }
+ 
+   render () { 
+     const activeStyle = { color: '#ff3333' };
+ 
+     return (
+        <div className='menu'>  
+          {menuItems.map(menuItem => 
+             <Link 
+              style={this.state.active === menuItem ? activeStyle : {}} 
+              onClick={this._handleClick.bind(this, menuItem)}
+             > 
+               {menuItem}
+             </Link>
+          )}
+        </div>
+     );    
+   }
+ }
   return (
     <nav>
       <div className="Navigation-container">
@@ -18,54 +45,54 @@ function Navbar() {
                     <ul className="menu">
 
                       <li>
-                        <Link to = "/">
+                        <Link activeStyle={{ color:'#5754a8' }} to = "/">
                           <img className="spalg-menu" src={spalg} alt="PUN" />
 
                           <img className="right-menu" src={bg} alt="PUN" />
                         </Link>
                       </li>
                       <li className="left-menu">
-                        <Link to="/chanmay">Chân Mày</Link>
+                        <Link activeStyle={{ color:'#5754a8' }} to="/chanmay">Chân Mày</Link>
                       </li>
                       <li className="left-menu">
-                        <Link to="/chanmay">Môi</Link>
+                        <Link activeStyle={{ color:'#5754a8' }} to="/chanmay">Môi</Link>
 
                       </li>
                       <li className="left-menu">
-                        <Link to="/chanmay">Triệt Lông</Link>
+                        <Link activeStyle={{ color:'#5754a8' }} to="/chanmay">Triệt Lông</Link>
 
                       </li>
                       <li className="left-menu">
-                        <Link to="/chanmay">Trị Mụn</Link>
+                        <Link activeStyle={{ color:'#5754a8' }} to="/chanmay">Trị Mụn</Link>
 
                       </li>
                       <li className="left-menu">
-                        <Link to="/chanmay">Chăm Sóc Da</Link>
+                        <Link activeStyle={{ color:'#5754a8' }} to="/chanmay">Chăm Sóc Da</Link>
 
                       </li>
                       <li className="left-menu">
-                        <Link to="/chanmay">Về Chúng Tôi</Link>
+                        <Link activeStyle={{ color:'#5754a8' }} to="/chanmay">Về Chúng Tôi</Link>
 
                       </li>
                       <li className="left-menu border-tv">
-                        <Link to="/chanmay">Tư Vấn</Link>
+                        <Link activeStyle={{ color:'#5754a8' }} to="/chanmay">Tư Vấn</Link>
 
                       </li>
                       <li className="left-menu icon-container">
                         <span>
-                          <Link>
+                          <Link activeStyle={{ color:'#5754a8' }}>
                             <img className="iconnav" src={phonecall} />
                           </Link>
                         </span>
                         <span className="iconnav">|</span>
                         <span>
-                          <Link>
+                          <Link activeStyle={{ color:'#5754a8' }}>
                             <img className="iconnav" src={locate} />
                           </Link>
                         </span>
                         <span className="iconnav">|</span>
                         <span>
-                          <Link>
+                          <Link activeStyle={{ color:'#5754a8' }}>
                             <img className="iconnav" src={mail} />
                           </Link>
                         </span>
