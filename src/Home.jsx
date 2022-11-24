@@ -23,14 +23,22 @@ import spalgTS from "./spalh-trongsuot.jpg";
 import fb1 from "./fb1.jpg";
 import banner from "./banner.jpg";
 
+
+// import useWindowSize from "./resizeSize";
 import "./Home.css";
-import {Route} from 'react-router-dom';
-import React, { Component } from 'react';
-const Home = () => {
+
+import React, { useLayoutEffect, useState } from 'react';
+
+import { Route } from 'react-router-dom';
+import { Component } from 'react';
+
+const Home = (props) => {
+  // const [width, height] = useWindowSize();
+
 
   return (
     <div className="MainHome">
-    {/* <header>
+      {/* <header>
     <div className="Navigation">
           <div className="categories">
             <ul className="menu">
@@ -68,41 +76,49 @@ const Home = () => {
         <img className="header-img" src={banner} alt="hinhSpa" />
         <img className=" header-logo spaLogo" src={spalgTS} alt="PUN" />
 
-    <h1 className="PU">PHUONGUYEN NGUYEN</h1>
-    <p className="NU">BEAUTY AND SPA</p>
-        
+        <h1 className="PU">PHUONGUYEN NGUYEN</h1>
+        <p className="NU">BEAUTY AND SPA</p>
+
       </div>
       <div className="about-us">
-      <div className="text-aboutUs">
-      <h2 className="textAU">ABOUT US</h2>
-      <hr className="line-aboutus"/>
 
-      </div>
-        <div className="AVT">
-          <div className="fadein">
-            <img className=" avt f3" src={avt} />
-            <img className="avt f2" src={avt1} />
-            <img className="avt f1" src={avt4} />
-          </div>
-        </div>
-        <div className="detail-about-us">
-          <div className="overlay-logo-imag"></div>
-          <img className="avt-logo imag" src={logo} alt="logo " />
-
-          <div className="text">
-            <h2 >ABOUT US</h2>
-            <p>Spa PhươngUyên Nguyễn</p>
-            <button className="xem-them">Xem thêm</button>
-          </div>
+        <div className="text-aboutUs">
+          <h2 className="textAU">ABOUT US</h2>
+          <hr className="line-aboutus" />
 
         </div>
+        <div className="content-container">
+          <div className="AVT">
+            <div className="fadein">
+              <img className=" avt f3" src={avt} />
+              <img className="avt f2" src={avt1} />
+              <img className="avt f1" src={avt4} />
+            </div>
+          </div>
+          <div className="detail-about-us">
+
+
+
+            <div className="text">
+              {/* <h2 >ABOUT US</h2> */}
+              <p className="pun">Spa PhươngUyên Nguyễn chúng tôi thành lập vào ngày 1/1/2020 hlksjhflk aldkjhlsdfj ljhal lfh lk lakjfhal lakhf</p>
+              <button className="xem-them">Xem thêm</button>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
       </div>
       <div className="cac-dich-vu">
-        <div className="text-aboutUs text-dv">
-      <h2 className="textAU text-cdv">Các dịch vụ</h2>
-      <hr className="line-aboutus line-dv"/>
+        <div className="text-aboutUs text-dv ">
+          <h2 className="textAU text-cdv">Các dịch vụ</h2>
+          <hr className="line-aboutus line-dv line-dv-cdv" />
 
-      </div>
+        </div>
         <div className="DV-Box">
           <div className="DV Chan-may">
             <div className="overlay"></div>
@@ -110,8 +126,9 @@ const Home = () => {
             <div className=" dv text-CM">
               <h4 className="header-text header-text-CM ">Phun xăm chân mày</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
+              <button className="button-detail">Chi tiết</button>
+           
             </div>
-            <button className="button-detail">Chi tiết</button>
           </div>
           <div className="DV moi">
             <div className="overlay"></div>
@@ -119,8 +136,9 @@ const Home = () => {
             <div className="dv text-M">
               <h4 className="header-text header-text-M">Phun xăm môi</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
+              <button className="button-detail">Chi tiết</button>
+          
             </div>
-            <button className="button-detail">Chi tiết</button>
 
           </div>
           <div className="DV TL">
@@ -131,9 +149,9 @@ const Home = () => {
               <h4 className="header-text header-text-TL">Triệt lông</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
 
+              <button className="button-detail">Chi tiết</button>
 
             </div>
-            <button className="button-detail">Chi tiết</button>
           </div>
           <div className="DV CSD">
             <div className="overlay"></div>
@@ -142,9 +160,9 @@ const Home = () => {
             <div className="dv text-CSD">
               <h4 className="header-text header-text-CSD">Chăm sóc da</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
+              <button className="button-detail">Chi tiết</button>
 
             </div>
-            <button className="button-detail">Chi tiết</button>
 
           </div>
           <div className="DV TM">
@@ -154,9 +172,9 @@ const Home = () => {
             <div className="dv text-TM">
               <h4 className="header-text header-text-TM">Trị mụn</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
+              <button className="button-detail">Chi tiết</button>
 
             </div>
-            <button className="button-detail">Chi tiết</button>
 
           </div>
         </div>
@@ -166,11 +184,11 @@ const Home = () => {
 
       </div>
       <div className="container">
-      <div className="title-feedback">
-      <h2 className="title-feedback2">FEEDBACK</h2>
-      <hr className="line-feedback" />
-      <p>Những phản hồi từ các khách hàng về dịch vụ của chúng tôi</p>
-      </div>
+        <div className="title-feedback">
+          <h2 className="title-feedback2">FEEDBACK</h2>
+          <hr className="line-feedback" />
+          <p>Những phản hồi từ các khách hàng về dịch vụ của chúng tôi</p>
+        </div>
         <div className="content-slider">
           <div className="slider">
             <div className="mask">
@@ -206,7 +224,7 @@ const Home = () => {
           </div>
         </div>
         <div className="content-slider2">
-        <div className="vl"></div>
+          <div className="vl"></div>
           <div className="slider2">
             <div className="mask2">
               <ul>
@@ -242,13 +260,13 @@ const Home = () => {
         </div>
       </div>
       <div className="TV">
-      <div className="title-feedback">
-      <h2 className="title-feedback2 title-tv1">TƯ VẤN</h2>
-      {/* <h2 className="title-feedback2">FEEDBACK</h2> */}
-      <hr className="line-feedback line-tv" />
+        <div className="title-feedback">
+          <h2 className="title-feedback2 title-tv1">TƯ VẤN</h2>
+          {/* <h2 className="title-feedback2">FEEDBACK</h2> */}
+          <hr className="line-feedback line-tv" />
 
-      </div>
-     
+        </div>
+
         <div className="hinh-anh-TV">
           <img className="skincare-image" src={skincare1} />
           <h1 className="title-tv">FOR SPA </h1>
@@ -259,23 +277,23 @@ const Home = () => {
         </div>
         <div className="form-dien">
           <label for="input" className="Input-label">Your Name</label>
-          <br />
+          <br  className="straight-line"/>
           <input type="text" className="Input-text input" />
-          <br />
+          <br  />
 
           <label for="input" className="Input-label">Phone Number</label>
-          <br />
+          <br className="straight-line" />
           <input type="text" className="Input-text input" />
           <br />
           <div className="ser">
             <label for="input" className="Input-label">Kind of Serves</label>
-            <br />
+            <br className="straight-line"/>
             <input type="text" className="Input-text serve" />
             <img className="arrown-down" src={arrDown} alt="Cougar" />
           </div>
           <br />
           <label for="input" className="Input-label demand-text">Your demand</label>
-          <br />
+          <br className="straight-line"/>
           <input type="text" className="Input-text demand" />
           <br />
 

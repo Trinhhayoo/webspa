@@ -16,8 +16,6 @@ const Footer = () => {
                 <div className="inside-container">
                     <div className="divide-container">
                         <div className="logo-foter">
-
-
                             <img className="logo-footer" src={spalgTS} alt="PUN" />
                             <h3>PHUONG UYEN NGUYEN</h3>
                             <p className="beauty">Beauty and Spa</p>

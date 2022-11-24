@@ -107,3 +107,25 @@ a {
     /* border-color: rgb(67, 98, 255); */
     background-color: rgb(99, 123, 241);
 }
+.option-icon {
+    display: none;
+}
+@media only screen and (max-width: 46.1785em) {
+    .left-menu{
+        display: none;
+    }
+   
+    .option-icon {
+        display: flex;
+    }
+    .option-img{
+        position: absolute;
+        width: 20px;
+        height: auto;
+        right:10px;
+        top:15px;
+    }
+    .header-ic2{
+        top:15px;
+    }
+}

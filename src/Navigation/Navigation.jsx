@@ -5,6 +5,8 @@ import locate from "../locate.svg";
 import phonecall from "../phonecall.svg";
 import bg from "../tenLG.png";
 import spalg from "../spalg.jpg";
+import menu from "./menu.jpg";
+
 import "./Navigation.css";
 function Navbar() {
   const menuItems = [
@@ -39,16 +41,16 @@ function Navbar() {
       <div className="Navigation-container">
       
 
-              <header>
-                <div className="Navigation">
+              {/* <header> */}
+                {/* <div className="Navigation"> */}
                   <div className="categories">
                     <ul className="menu">
 
                       <li>
                         <Link activeStyle={{ color:'#5754a8' }} to = "/">
-                          <img className="spalg-menu" src={spalg} alt="PUN" />
+                          <img className="header-ic1 spalg-menu" src={spalg} alt="PUN" />
 
-                          <img className="right-menu" src={bg} alt="PUN" />
+                          <img className=" header-ic2  right-menu" src={bg} alt="PUN" />
                         </Link>
                       </li>
                       <li className="left-menu">
@@ -81,19 +83,19 @@ function Navbar() {
                       <li className="left-menu icon-container">
                         <span>
                           <Link activeStyle={{ color:'#5754a8' }}>
-                            <img className="iconnav" src={phonecall} />
+                            <img className=" left-menu iconnav" src={phonecall} />
                           </Link>
                         </span>
-                        <span className="iconnav">|</span>
+                        <span className=" left-menu iconnav">|</span>
                         <span>
                           <Link activeStyle={{ color:'#5754a8' }}>
-                            <img className="iconnav" src={locate} />
+                            <img className=" left-menu iconnav" src={locate} />
                           </Link>
                         </span>
-                        <span className="iconnav">|</span>
+                        <span className=" left-menu iconnav">|</span>
                         <span>
                           <Link activeStyle={{ color:'#5754a8' }}>
-                            <img className="iconnav" src={mail} />
+                            <img className=" left-menu iconnav" src={mail} />
                           </Link>
                         </span>
 
@@ -101,11 +103,14 @@ function Navbar() {
 
                     </ul>
                   </div>
-                </div>
-              </header>
+                {/* </div> */}
+              {/* </header> */}
            
          
 
+        </div>
+        <div className="option-icon">
+          <img  className = "option-img" src={menu}/>
         </div>
      
 
