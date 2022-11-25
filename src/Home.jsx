@@ -22,6 +22,8 @@ import inic from "./ins.jpg";
 import spalgTS from "./spalh-trongsuot.jpg";
 import fb1 from "./fb1.jpg";
 import banner from "./banner.jpg";
+import banner2 from "./banner2.jpg";
+import star from "./star.jpg";
 
 
 // import useWindowSize from "./resizeSize";
@@ -74,6 +76,8 @@ const Home = (props) => {
       <div className="header">
         {/* <div className="overlayHeader"></div> */}
         <img className="header-img" src={banner} alt="hinhSpa" />
+        <img className=" header-img2" src={banner2} alt="hinhSpa" />
+
         <img className=" header-logo spaLogo" src={spalgTS} alt="PUN" />
 
         <h1 className="PU">PHUONGUYEN NGUYEN</h1>
@@ -127,7 +131,7 @@ const Home = (props) => {
               <h4 className="header-text header-text-CM ">Phun xăm chân mày</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
               <button className="button-detail">Chi tiết</button>
-           
+
             </div>
           </div>
           <div className="DV moi">
@@ -137,7 +141,7 @@ const Home = (props) => {
               <h4 className="header-text header-text-M">Phun xăm môi</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
               <button className="button-detail">Chi tiết</button>
-          
+
             </div>
 
           </div>
@@ -229,7 +233,10 @@ const Home = (props) => {
             <div className="mask2">
               <ul>
                 <li className="firstanimation2">
-                  <a href="#"> <img className="avt-fb2" src={fb1} alt="Cougar" /> </a>
+                  <a href="#">
+                    <img className="avt-fb2" src={fb1} alt="Cougar" />
+
+                  </a>
                   {/* <div class="tooltip"> <h1>Cougar</h1> </div> */}
                 </li>
 
@@ -258,6 +265,111 @@ const Home = (props) => {
             <div class="progress-bar"></div>
           </div>
         </div>
+        <div className="content-slider3">
+          <div className="slide-feedback  slider3">
+            <div className="mask3">
+              <ul>
+                <li className="firstanimation2">
+                  <a href="#">
+                    <div>
+                      <h3>Chị A</h3>
+                      <div className="rate-star">
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+
+                     </div>
+                      <p>Sau khi mình đăng kí gói trị mụn của Spa thì sau một tháng mình đã hầu như giảm rổ rất nhiều</p>
+                    </div>
+                  </a>
+
+                  <div class="tooltip">  </div>
+                </li>
+
+                <li className="secondanimation2">
+                  <a href="#">
+                    <div>
+                      <h3>Bạn B</h3>
+                      <div className="rate-star">
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+
+                     </div>
+                      <p>tháng mình đã hầu như giảm rổ rất nhiều</p>
+
+                    </div>
+                  </a>
+                  <div class="tooltip">  </div>
+                </li>
+
+                <li className="thirdanimation2">
+                  <a href="#">
+                    <div>
+                      <h3>Dì C</h3>
+                      <div className="rate-star">
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+
+                     </div>
+                      <p>Sau khi mình đăng kí gói trị mụn của Spa thì sau một tháng mình đã hầu như giảm rổ rất nhiều</p>
+
+                    </div>
+                  </a>
+                  <div class="tooltip"> </div>
+                </li>
+
+                <li className="fourthanimation2">
+                  <a href="#">
+                    <div>
+                      <h3>Anh D</h3>
+                      <div className="rate-star">
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+
+                     </div>
+                      <p>Sau khi mình đăng kí gói trị mụn của Spa thì sau một tháng mình đã hầu như giảm rổ rất nhiều</p>
+
+                    </div>
+                  </a>
+                  <div class="tooltip">  </div>
+                </li>
+
+                <li className="fifthanimation2">
+                  <a href="#">
+                    <div>
+                      <h3>Em E</h3>
+                     <div className="rate-star">
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+                     <img className="star-a" src={star} alt="star danh gia" />
+
+                     </div>
+                      <p>Sau khi mình đăng kí gói trị mụn của Spa thì sau một tháng mình đã hầu như giảm rổ rất nhiều</p>
+
+                    </div>
+                  </a>
+                  <div class="tooltip">  </div>
+                </li>
+              </ul>
+
+            </div>
+            <div className="progress-bar"></div>
+
+          </div>
+        </div>
       </div>
       <div className="TV">
         <div className="title-feedback">
@@ -277,9 +389,9 @@ const Home = (props) => {
         </div>
         <div className="form-dien">
           <label for="input" className="Input-label">Your Name</label>
-          <br  className="straight-line"/>
+          <br className="straight-line" />
           <input type="text" className="Input-text input" />
-          <br  />
+          <br />
 
           <label for="input" className="Input-label">Phone Number</label>
           <br className="straight-line" />
@@ -287,13 +399,13 @@ const Home = (props) => {
           <br />
           <div className="ser">
             <label for="input" className="Input-label">Kind of Serves</label>
-            <br className="straight-line"/>
+            <br className="straight-line" />
             <input type="text" className="Input-text serve" />
             <img className="arrown-down" src={arrDown} alt="Cougar" />
           </div>
           <br />
           <label for="input" className="Input-label demand-text">Your demand</label>
-          <br className="straight-line"/>
+          <br className="straight-line" />
           <input type="text" className="Input-text demand" />
           <br />
 
