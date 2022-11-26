@@ -31,19 +31,19 @@ const Footer = () => {
                             <ul className="info">
                                 <li className="each-info">
                                     <span>
-                                        <img className="iconnav img-dc " src={locate} /></span>
+                                        <img className="iconnav ic-footer img-dc " src={locate} /></span>
                                     <p className="foter-ic foter-dc">QL27, Thạch Hà 1, Quảng Sơn, Ninh Sơn, Ninh Thuận</p>
                                 </li>
                                 <li className="each-info">
                                     <span>
-                                        <img className="iconnav img-phone " src={phonecall} /></span>
+                                        <img className="iconnav ic-footer img-phone " src={phonecall} /></span>
                                     <p className="foter-ic foter-phone">0342235673</p>
                                 </li>
 
                                 <li className="each-info">
 
                                     <span>
-                                        <img className="iconnav img-mail " src={mail} /></span>
+                                        <img className="iconnav ic-footer img-mail " src={mail} /></span>
                                     <p className="foter-ic foter-mail">phuonguyen998@gmail.com</p>
                                 </li>
 

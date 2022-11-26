@@ -1490,13 +1490,24 @@ input[type=text]:focus {
   .text-aboutUs {
     text-align: center;
     margin-left: 0%;
+    margin-bottom: 50px !important;
   }
 
   .line-aboutus {
-    left: 20px;
+    left: 61px;
     width: 150px;
   }
+.line-tv {
+  width: 24% !important;
+  /* left: 0px !important; */
+  top: -14px;
+  margin-left: 121.5px !important;
+}
+.title-tv1{
+  margin-left: 140px !important;
+  margin-top: -30px !important;
 
+}
   .line-dv {
     left: 262px;
     width: 23%;
@@ -1518,9 +1529,9 @@ input[type=text]:focus {
   }
 
   .header-text-CM {
-    font-size: 40px;
+    font-size: 37px;
     width: 490px !important;
-    left: 0px !important;
+    left: -9px !important;
     top: 120px !important;
 }
 
@@ -1540,29 +1551,30 @@ input[type=text]:focus {
   .header-text-M{
     font-size: 40px;
     width: 490px !important;
-    left: 0px !important;
+    left: -5px !important;
     top: 120px !important;
   }
   .header-text-TL{
     font-size: 40px;
     width: 490px !important;
-    left: 0px !important;
+    left: -5px !important;
     top: 120px !important;
   }
   .header-text-CSD{
     font-size: 40px;
     width: 490px !important;
-    left: 0px !important;
+    left: -5px !important;
     top: 120px !important;
   }
   .header-text-TM{
     font-size: 40px;
     width: 490px !important;
-    left: 0px !important;
+    left: -5px !important;
     top: 120px !important;
   }
   .line-dv-cdv{
-    left: 269px !important;
+    left: 109px !important;
+    width: 160px !important;
   }
   .title-feedback{
     margin-left: 0px;
@@ -1597,8 +1609,8 @@ input[type=text]:focus {
     margin-left: 0px;
   }
   .line-feedback{
-    width: 17%;
-    left:290px;
+    width: 31%;
+    left: 130px;
   }
   .title-tv1{
     top:0px;
@@ -1612,7 +1624,7 @@ input[type=text]:focus {
     margin-top: 50px;
     /* box-sizing: border-box; */
     width: 100%;
-    padding: 0 60px;
+    padding: 0 65px;
     
     /* margin-left: 50px; */
   }
@@ -1767,5 +1779,31 @@ input[type=text]:focus {
 
 .TV {
   margin-top: 0px;
+}
+.ic-footer {
+  display: flex;
+  margin-left: 50px;
+  /* margin-top: 5px; */
+}
+.foter-dc{
+  margin-left: 50px;
+  margin-top: 12px;
+  text-align: left;
+}
+.img-phone{
+  margin-top: 30px !important;
+}
+.foter-phone{
+  margin-top: 10px !important;
+  margin-left: 50px;
+}
+.foter-mail{
+  margin-top: 7px !important;
+
+  margin-left: 50px;
+
+}
+.active-list {
+  padding-left: 0px;
 }
 }
