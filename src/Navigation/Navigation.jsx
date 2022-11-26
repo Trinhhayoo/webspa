@@ -7,6 +7,10 @@ import bg from "../tenLG.png";
 import spalg from "../spalg.jpg";
 import menu from "./menu.jpg";
 
+import header1 from "../header1.jpg";
+import header2 from "../header2.jpg";
+
+
 import "./Navigation.css";
 function Navbar() {
   const menuItems = [
@@ -37,6 +41,7 @@ function Navbar() {
    }
  }
   return (
+   <div>
     <nav>
       <div className="Navigation-container">
       
@@ -109,12 +114,33 @@ function Navbar() {
          
 
         </div>
-        <div className="option-icon">
-          <img  className = "option-img" src={menu}/>
-        </div>
+
+       
+
      
 
     </nav>
+    <div className="header">
+      <div className="item rong">
+<div className="nen-header">
+<h1 className="spa-header">SPA</h1>
+<h3 className="spa-header-para" >ENJOY YOUR RELAXING TIME</h3>
+<p></p>
+</div>
+      </div>
+      {/* <div className="item hinh1"> */}
+<img className="item hinh1" src={header1}/>
+      {/* </div> */}
+      {/* <div className="item hinh2"> */}
+<img className="item hinh2" src={header2} />
+      {/* </div> */}
+      <div className="item sidebar">
+
+      </div>
+
+
+      </div>
+    </div>
   );
 }
 

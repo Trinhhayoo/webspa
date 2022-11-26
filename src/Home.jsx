@@ -25,6 +25,8 @@ import banner from "./banner.jpg";
 import banner2 from "./banner2.jpg";
 import star from "./star.jpg";
 
+import header1 from "./header1.jpg";
+import header2 from "./header2.jpg";
 
 // import useWindowSize from "./resizeSize";
 import "./Home.css";
@@ -73,17 +75,26 @@ const Home = (props) => {
           </div>
         </div>
     </header> */}
-      <div className="header">
-        {/* <div className="overlayHeader"></div> */}
-        <img className="header-img" src={banner} alt="hinhSpa" />
-        <img className=" header-img2" src={banner2} alt="hinhSpa" />
-
-        <img className=" header-logo spaLogo" src={spalgTS} alt="PUN" />
-
-        <h1 className="PU">PHUONGUYEN NGUYEN</h1>
-        <p className="NU">BEAUTY AND SPA</p>
+      {/* <div className="header">
+      <div className="item rong">
+<div className="nen-header">
+<h1 className="spa-header">SPA</h1>
+<h3 className="spa-header-para" >ENJOY YOUR RELAXING TIME</h3>
+<p></p>
+</div>
+      </div>
+      <div className="item hinh1">
+<img className="item hinh1" src={header1}/>
+      </div>
+      <div className="item hinh2">
+<img className="item hinh2" src={header2} />
+      </div>
+      <div className="item sidebar">
 
       </div>
+
+
+      </div> */}
       <div className="about-us">
 
         <div className="text-aboutUs">

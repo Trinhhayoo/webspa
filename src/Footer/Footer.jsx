@@ -7,11 +7,57 @@ import phonecall from "../phonecall.svg";
 import fbic from "../facebook.jpg";
 import inic from "../ins.jpg";
 import spalgTS from "../spalh-trongsuot.jpg";
+import arrDown from "../arrowDown.png";
+
+import skincare1 from "../skincare2.jpg";
 
 import "./Footer.css";
 const Footer = () => {
     return (
-        <footer className="foter">
+        <div>
+         <div className="TV">
+        <div className="title-feedback">
+          <h2 className="title-feedback2 title-tv1">TƯ VẤN</h2>
+          {/* <h2 className="title-feedback2">FEEDBACK</h2> */}
+          <hr className="line-feedback line-tv" />
+
+        </div>
+
+        <div className="hinh-anh-TV">
+          <img className="skincare-image" src={skincare1} />
+          <h1 className="title-tv">FOR SPA </h1>
+          <hr className="h-r" />
+          <h1 className="title-tv2">BEAUTY PROFESSIONALS</h1>
+          <hr className="h-r2" />
+
+        </div>
+        <div className="form-dien">
+          <label for="input" className="Input-label">Your Name</label>
+          <br className="straight-line" />
+          <input type="text" className="Input-text input" />
+          <br />
+
+          <label for="input" className="Input-label">Phone Number</label>
+          <br className="straight-line" />
+          <input type="text" className="Input-text input" />
+          <br />
+          <div className="ser">
+            <label for="input" className="Input-label">Kind of Serves</label>
+            <br className="straight-line" />
+            <input type="text" className="Input-text serve" />
+            <img className="arrown-down" src={arrDown} alt="Cougar" />
+          </div>
+          <br />
+          <label for="input" className="Input-label demand-text">Your demand</label>
+          <br className="straight-line" />
+          <input type="text" className="Input-text demand" />
+          <br />
+
+          <button className="submit-demand">Send Your Demand</button>
+        </div>
+
+      </div>
+<footer className="foter">
             <div className="information-container">
                 <div className="inside-container">
                     <div className="divide-container">
@@ -65,6 +111,8 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
+        </div>
+        
     );
 };
 export default Footer;
