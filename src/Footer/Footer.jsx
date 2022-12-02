@@ -2,6 +2,9 @@ import React,  { useState } from "react";
 import styled from 'styled-components';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
+import FormTuVan from "../Form/Form";
+
+
 import mail from "../mail.png"
 import locate from "../locate.svg";
 import phonecall from "../phonecall.svg";
@@ -9,7 +12,6 @@ import fbic from "../facebook.jpg";
 import inic from "../ins.jpg";
 import spalgTS from "../spalh-trongsuot.jpg";
 import arrDown from "./arrowDown.png";
-
 import skincare1 from "../skincare2.jpg";
 
 import "./Footer.css";
@@ -80,72 +82,7 @@ const Footer = () => {
 
     return (
         <div>
-            <div className="TV">
-
-                <div className="itemTV title-TV">
-                    <h2 className=" title-tv1">TƯ VẤN</h2>
-                    {/* <h2 className="title-feedback2">FEEDBACK</h2> */}
-                    <hr className="titleTV-line" />
-
-                </div>
-                <div className="itemTV skincareTV ">
-                    <img className=" skincare-image" src={skincare1} />
-                </div>
-
-
-                <div className="itemTV conclusionTV">
-                    <h1 className="title-tv2">BEAUTY PROFESSIONALS</h1>
-
-                    <h1 className="title-tv2">FOR SPA </h1>
-
-
-                </div>
-
-                <div className="itemTV formItem name">
-                    <label for="input" className="Input-label">Your Name</label>
-                    <br className="straight-line" />
-                    <input type="text" className="Input-text input" />
-                </div>
-                <div className="itemTV formItem phone">
-                    <label for="input" className="Input-label">Phone Number</label>
-                    <br className="straight-line" />
-                    <input type="text" className="Input-text input" />
-                </div>
-                <div className="itemTV formItem ser ">
-                <label for="input" className="Input-label">Select Service</label>
-                
-                    <DropDownContainer className="hover-drop">
-                        <DropDownHeader onClick={toggling}>
-                            {selectedOption || "Service"}
-                        </DropDownHeader>
-                        {isOpen && (
-                            <DropDownListContainer>
-                                <DropDownList>
-                                    {options.map(option => (
-                                        <ListItem onClick={onOptionClicked(option)} key={Math.random()}>
-                                            {option}
-                                        </ListItem>
-                                    ))}
-                                </DropDownList>
-                            </DropDownListContainer>
-                        )}
-                    </DropDownContainer>
-
-                </div>
-                <div className="itemTV formItem demand">
-                    <label for="input" className="Input-label demand-text">Your demand</label>
-                    <br className="straight-line" />
-                    <textarea type="text" className="Input-text input-demand" placeholder="type text here"></textarea>
-                    {/* <input type="text" className="Input-text input-demand" /> */}
-                </div>
-
-                <div className="itemTV but">
-                    <button className="submit-demand">Send Your Demand</button>
-                </div>
-
-
-
-            </div>
+          <FormTuVan />
             <footer className="foter">
                 <div className="information-container">
                     <div className="inside-container">
