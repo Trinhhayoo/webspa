@@ -28,6 +28,8 @@ import star from "./star.jpg";
 import header1 from "./header1.jpg";
 import header2 from "./header2.jpg";
 
+import {useNavigate} from 'react-router-dom';
+
 // import useWindowSize from "./resizeSize";
 import "./Home.css";
 
@@ -38,63 +40,32 @@ import { Component } from 'react';
 
 const Home = (props) => {
   // const [width, height] = useWindowSize();
+  const navigate = useNavigate();
 
+  const chanmay = () => {
+    // 👇️ navigate programmatically
+    navigate('/chanmay');
+  };
+  const moi = () => {
+    // 👇️ navigate programmatically
+    navigate('/moi');
+  };
+  const trietlong = () => {
+    // 👇️ navigate programmatically
+    navigate('/trietlong');
+  };
+  const trimun = () => {
+    // 👇️ navigate programmatically
+    navigate('/trimun');
+  };
+  const chamsocda = () => {
+    // 👇️ navigate programmatically
+    navigate('/chamsocda');
+  };
 
   return (
     <div className="MainHome">
-      {/* <header>
-    <div className="Navigation">
-          <div className="categories">
-            <ul className="menu">
-              <li>
-                <img className="spalg-menu" src={spalg} alt="PUN" />
-
-                <img className="right-menu" src={bg} alt="PUN" />
-
-              </li>
-              <li className="left-menu">Chân Mày</li>
-              <li className="left-menu">Môi</li>
-              <li className="left-menu">Triệt lông</li>
-              <li className="left-menu">Trị mụn</li>
-              <li className="left-menu">Chăm sóc da</li>
-              <li className="left-menu">Về chúng tôi</li>
-              <li className="left-menu border-tv">Tư vấn</li>
-              <li className="left-menu icon-container">
-                <span>
-                  <img className="iconnav" src={phonecall} /></span>
-                <span className="iconnav">|</span>
-                <span>
-                  <img className="iconnav" src={locate} /></span>
-                <span className="iconnav">|</span>
-                <span>
-                  <img className="iconnav" src={mail} /></span>
-
-              </li>
-
-            </ul>
-          </div>
-        </div>
-    </header> */}
-      {/* <div className="header">
-      <div className="item rong">
-<div className="nen-header">
-<h1 className="spa-header">SPA</h1>
-<h3 className="spa-header-para" >ENJOY YOUR RELAXING TIME</h3>
-<p></p>
-</div>
-      </div>
-      <div className="item hinh1">
-<img className="item hinh1" src={header1}/>
-      </div>
-      <div className="item hinh2">
-<img className="item hinh2" src={header2} />
-      </div>
-      <div className="item sidebar">
-
-      </div>
-
-
-      </div> */}
+    
       <div className="about-us">
 
         <div className="text-aboutUs">
@@ -102,7 +73,7 @@ const Home = (props) => {
           <hr className="line-aboutus" />
 
         </div>
-        <div className="content-container">
+        <div className="content-container1">
           <div className="AVT">
             <div className="fadein">
               <img className=" avt f3" src={avt} />
@@ -116,16 +87,15 @@ const Home = (props) => {
 
             <div className="text">
               {/* <h2 >ABOUT US</h2> */}
-              <p className="pun">Spa PhươngUyên Nguyễn chúng tôi thành lập vào ngày 1/1/2020 hlksjhflk aldkjhlsdfj ljhal lfh lk lakjfhal lakhf</p>
+              <p className="pun">Trong suốt hơn 1 năm hình thành và phát triển, hiện tại PHƯƠNG UYÊN NGUYỄN SPA đã trở thành địa điểm làm đẹp uy tín hàng đầu đối tại khu vực. Spa chúng mình vẫn luôn không ngừng hoàn thiện về mọi mặt và từng bước phát triển cả về công nghệ và chuyên môn với mong muốn là nơi chị em phụ nữ lựa chọn và gửi gắm niềm tin thay đổi nhan sắc hoàn hảo. Chúng mình luôn tích cực tiếp thu những công nghệ và phương pháp làm đẹp mới nhất trên thế giới. PHƯƠNG UYÊN NGUYỄN SPA luôn mong muốn đem đến cho khách hàng vẻ đẹp hoàn hảo nhất.
+
+</p>
               <button className="xem-them">Xem thêm</button>
             </div>
 
           </div>
 
         </div>
-
-
-
 
       </div>
       <div className="cac-dich-vu">
@@ -141,7 +111,7 @@ const Home = (props) => {
             <div className=" dv text-CM">
               <h4 className="header-text header-text-CM ">Phun xăm chân mày</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
-              <button className="button-detail">Chi tiết</button>
+              <button className="button-detail" onClick={chanmay}>Chi tiết</button>
 
             </div>
           </div>
@@ -151,7 +121,7 @@ const Home = (props) => {
             <div className="dv text-M">
               <h4 className="header-text header-text-M">Phun xăm môi</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
-              <button className="button-detail">Chi tiết</button>
+              <button className="button-detail" onClick={moi}>Chi tiết</button>
 
             </div>
 
@@ -164,7 +134,7 @@ const Home = (props) => {
               <h4 className="header-text header-text-TL">Triệt lông</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
 
-              <button className="button-detail">Chi tiết</button>
+              <button className="button-detail" onClick={trietlong}>Chi tiết</button>
 
             </div>
           </div>
@@ -175,7 +145,7 @@ const Home = (props) => {
             <div className="dv text-CSD">
               <h4 className="header-text header-text-CSD">Chăm sóc da</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
-              <button className="button-detail">Chi tiết</button>
+              <button className="button-detail" onClick={chamsocda}>Chi tiết</button>
 
             </div>
 
@@ -187,7 +157,7 @@ const Home = (props) => {
             <div className="dv text-TM">
               <h4 className="header-text header-text-TM">Trị mụn</h4>
               <p className="pagraph">chân mày thanh tú, sắc nét, tôn lên thần thái và vẻ đẹp của gương mặt.</p>
-              <button className="button-detail">Chi tiết</button>
+              <button className="button-detail" onClick={trimun}>Chi tiết</button>
 
             </div>
 

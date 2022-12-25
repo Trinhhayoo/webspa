@@ -5,6 +5,7 @@ import axios from "axios";
 
 import skincare1 from "../skincare2.jpg";
 
+import "./Form.css";
 const baseURL = "http://devdb.klabs.life/api/advises";
 const options = ["Chân Mày", "Môi", "Trị Mụn", "Chăm Sóc Da", "Triệt Lông"];
 const Main = styled("div")`
@@ -80,32 +81,32 @@ const FormTuVan = () => {
             'Content-type': 'application/json'
         }
     });
+ 
 
-
-
+   
     const toggling = () => setIsOpen(!isOpen);
     const onOptionClicked = (event) => () => {
         console.log(event)
         setSelectedOption(event);
         setIsOpen(false);
-        const newList = () => {
-            if (formFields.service !== event) {
-                console.log(event)
+                const newList = () => {
+                    if (formFields.service !== event) {
+                        console.log(event)
 
-                const updatedItem = {
-                    ...formFields,
-                    service: event,
-                };
-                console.log(`${updatedItem.service} aa`)
-                return updatedItem;
-            }
+                        const updatedItem = {
+                            ...formFields,
+                            service: event,
+                        };
+                        console.log(`${updatedItem.service} aa`)
+        return updatedItem;
+                    }
 
-        }
-
+                }
+  
         const newForm = newList();
-        setFormFields(newForm);
+        setFormFields( newForm);
 
-        // console.log(newForm)
+        console.log(newForm)
         console.log(formFields)
 
 
@@ -128,9 +129,10 @@ const FormTuVan = () => {
     const submitHandler = async (event) => {
 
         event.preventDefault();
+        console.log(formFields)
 
         await axios.post("http://devdb.klabs.life/api/advises", {
-            "data": {
+            data: {
                 phoneNumber,
                 service,
                 name,
@@ -138,10 +140,13 @@ const FormTuVan = () => {
                 image
             }
         }).then(res => {
-            console.log(res);
+            console.log(`${res} hi`);
             console.log(res.data);
-        });
-        
+            setFormFields(defaultFormFields);
+            this.input.value = '';
+            this.setState({ value: '' })
+        })
+        .catch(error => console.log(error));
     };
     return (
         <div className="TV">
@@ -173,7 +178,9 @@ const FormTuVan = () => {
                     label="name"
                     required
                     onChange={handleChange}
-                    name="name" />
+                    name="name"
+                    value={name}
+                     />
             </div>
             <div className="itemTV formItem phone">
                 <label for="input" className="Input-label">Phone Number</label>
@@ -183,6 +190,7 @@ const FormTuVan = () => {
                     required
                     onChange={handleChange}
                     name="phoneNumber"
+                    value={phoneNumber}
                 />
             </div>
             <div className="itemTV formItem ser ">
@@ -216,6 +224,7 @@ const FormTuVan = () => {
                     required
                     onChange={handleChange}
                     name="message"
+                    value={message}
                 ></textarea>
                 {/* <input type="text" className="Input-text input-demand" /> */}
             </div>

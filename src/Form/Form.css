@@ -1,0 +1,149 @@
+.TV {
+    /* background-color: rgb(102, 175, 175); */
+    display: grid;
+    width: 100%;
+    grid-template-columns: [start anh-start] 5fr [anh-end form-start] 5fr [form-end end];
+    grid-template-rows: [start title-start] auto [title-end name-start] auto [name-end phone-start] auto [phone-end ser-start] auto [ser-end demand-start] auto [anh-end clu-start] auto [demand-end but-start] auto [end but-end];
+    grid-row-gap: 0.5rem;
+    margin-bottom: 100px;
+  }
+  
+  .itemTV {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+  
+    border: 5px;
+    border-radius: 3px;
+  
+    font-family: sans-serif;
+  }
+  
+  .title-TV {
+    margin: auto;
+    margin-bottom: 50px;
+    /* width: 50%; */
+    grid-column: start / end;
+    grid-row: start / name-start;
+  
+  }
+  
+  .title-tv1 {
+    z-index: 1;
+  }
+  
+  .titleTV-line {
+    margin-top: -28px;
+    width: 100px;
+    height: 5px;
+    border: none;
+    background-color: rgb(179, 179, 179);
+  }
+  
+  .skincareTV {
+    margin: auto;
+    margin-top: 30px;
+    grid-column: start / anh-end;
+    grid-row: title-end / clu-start;
+  }
+  
+  .skincare-image {
+    margin-top: 0px;
+    width: 350px;
+    height: auto;
+  
+  }
+  
+  .conclusionTV {
+    align-items: center;
+    grid-column: start / anh-end;
+    grid-row: clu-start / but-end;
+  }
+  
+  .formItem {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title-tv2 {
+    padding: auto;
+  }
+  
+  .name {
+  
+    grid-column: anh-end / form-end;
+    grid-row: name-start / name-end;
+  }
+  
+  .phone {
+    grid-column: anh-end / form-end;
+    grid-row: phone-start / phone-end;
+  }
+  
+  .ser {
+    position: relative;
+    grid-column: anh-end / form-end;
+    grid-row: phone-end / ser-end;
+  }
+  
+  .demand {
+    grid-column: anh-end / form-end;
+    grid-row: demand-start / but-start;
+  }
+  
+  .but {
+    grid-column: anh-end / form-end;
+    grid-row: but-start / but-end;
+  }
+  
+  
+  
+  .Input-text:focus {
+    border: 2px solid;
+    /* background-color: lightblue; */
+  }
+  .hover-drop:hover{
+    cursor:pointer;
+  }
+  .Input-text {
+  
+    width: 60%;
+    height: 30px;
+    background-color: rgb(205, 205, 205);
+    border: none;
+    border-radius: 0.5em;
+  }
+  
+  .input-demand {
+  
+    text-align: left;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0.4em;
+    padding-right: 0.4em;
+    height: 150px !important;
+    width: 60%;
+    background-color: rgb(205, 205, 205);
+    border: none;
+    border-radius: 0.5em;
+  }
+  /* 
+  .demand {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */
+  
+  .submit-demand {
+    width: 22%;
+    height: 30px;
+    border-radius: 2em;
+    border: none;
+    background-color: rgb(71, 238, 163);
+  }
+  .submit-demand:hover {
+    cursor: pointer;
+  }

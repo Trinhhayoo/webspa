@@ -1,0 +1,295 @@
+.slider-TriMun {
+    background: #000;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    height: 420px;
+    width: 480px;
+    /* margin: 40px auto 0; */
+    margin-left: 25%;
+    margin-top: 50px;
+   
+    overflow: visible;
+    position: relative;
+    
+  }
+  
+  .mask {
+    overflow: hidden;
+    height: 420px;
+  }
+  
+  /* IMAGE LIST */
+  
+  .slider-TriMun ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .slider-TriMun li {
+    width: 200px;
+    /* Width Image */
+    height: 420px;
+    /* Height Image */
+    position: absolute;
+    left: -325px;
+    /* Original Position - Outside of the Slider */
+    list-style: none;
+  }
+  
+.avt-fb {
+    height: 420px;
+    width: 480px;
+  }
+  
+  /* ANIMATION */
+  
+  @keyframes cycle {
+    0% {
+      left: 0px;
+    }
+  
+    /* When you start the slide, the first image is already visible */
+    4% {
+      left: 0px;
+    }
+  
+    /* Original Position */
+    16% {
+      left: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+  
+    /* From 4% to 16 % = for 3 seconds the image is visible */
+    20% {
+      left: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+  
+    /* From 16% to 20% = for 1 second exit image */
+    21% {
+      left: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  
+    /* Return to Original Position */
+    92% {
+      left: -325px;
+      opacity: 0;
+      z-index: 0;
+    }
+  
+    96% {
+      left: -325px;
+      opacity: 0;
+    }
+  
+    /* From 96% to 100% = for 1 second enter image*/
+    100% {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cycletwo {
+    0% {
+      left: -325px;
+      opacity: 0;
+    }
+  
+    /* Original Position */
+    16% {
+      left: -325px;
+      opacity: 0;
+    }
+  
+    /* Starts moving after 16% to this position */
+    20% {
+      left: 0px;
+      opacity: 1;
+    }
+  
+    24% {
+      left: 0px;
+      opacity: 1;
+    }
+  
+    /* From 20% to 24% = for 1 second enter image*/
+    36% {
+      left: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+  
+    /* From 24% to 36 % = for 3 seconds the image is visible */
+    40% {
+      left: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+  
+    /* From 36% to 40% = for 1 second exit image */
+    41% {
+      left: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  
+    /* Return to Original Position */
+    100% {
+      left: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  
+  @keyframes cyclethree {
+    0% {
+      left: -325px;
+      opacity: 0;
+    }
+  
+    36% {
+      left: -325px;
+      opacity: 0;
+    }
+  
+    40% {
+      left: 0px;
+      opacity: 1;
+    }
+  
+    44% {
+      left: 0px;
+      opacity: 1;
+    }
+  
+    56% {
+      left: 0px;
+      opacity: 1;
+    }
+  
+    60% {
+      left: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+  
+    61% {
+      left: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  
+    100% {
+      left: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  
+  @keyframes cyclefour {
+    0% {
+      left: -325px;
+      opacity: 0;
+    }
+  
+    56% {
+      left: -325px;
+      opacity: 0;
+    }
+  
+    60% {
+      left: 0px;
+      opacity: 1;
+    }
+  
+    64% {
+      left: 0px;
+      opacity: 1;
+    }
+  
+    76% {
+      left: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+  
+    80% {
+      left: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+  
+    81% {
+      left: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  
+    100% {
+      left: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+  
+  @keyframes cyclefive {
+    0% {
+      left: -325px;
+      opacity: 0;
+    }
+  
+    76% {
+      left: -325px;
+      opacity: 0;
+    }
+  
+    80% {
+      left: 0px;
+      opacity: 1;
+    }
+  
+    84% {
+      left: 0px;
+      opacity: 1;
+    }
+  
+    96% {
+      left: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+  
+    100% {
+      left: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+  }
+  
+  .slider-TriMun li.firstanimation {
+    animation: cycle 10s linear infinite;
+  }
+  
+  .slider-TriMun li.secondanimation {
+    animation: cycletwo 10s linear infinite;
+  }
+  
+  .slider-TriMun li.thirdanimation {
+    animation: cyclethree 10s linear infinite;
+  }
+  
+  .slider-TriMun li.fourthanimation {
+    animation: cyclefour 10s linear infinite;
+  }
+  
+  .slider-TriMun li.fifthanimation {
+    animation: cyclefive 10s linear infinite;
+  }
+  .ex-img {
+    margin-left: 120px;
+  }

@@ -17,56 +17,6 @@ import skincare1 from "../skincare2.jpg";
 import "./Footer.css";
 
 
-// const DropDownContainer = styled("div")``;
-// const DropDownHeader = styled("div")``;
-// const DropDownListContainer = styled("div")``;
-// const DropDownList = styled("ul")``;
-// const ListItem = styled("li")``;
-const options = ["Chân Mày", "Môi", "Trị Mụn", "Chăm Sóc Da", "Triệt Lông"];
-const Main = styled("div")`
-  font-family: sans-serif;
-  ${'' /* background: #f0f0f0; */}
-  height: 70vh;
-`;
-
-const DropDownContainer = styled("div")`
-  width: 15em;
- 
-`;
-
-const DropDownHeader = styled("div")`
-  ${'' /* margin-bottom: 0.8em; */}
-  padding: 0.2em 2em 0.2em 1em;
-
-  border: 5px;
-  background-color: grey;
-  font-weight: 500;
-  font-size: 1.3rem;
-  color: #3faffa;
-
-`;
-
-const DropDownListContainer = styled("div")``;
-
-const DropDownList = styled("ul")`
-  padding: 0;
-  margin: 0;
-  padding-left: 1em;
-  background: #ffffff;
-  border: 2px solid #e5e5e5;
-  box-sizing: border-box;
-  color: #3faffa;
-  font-size: 1.3rem;
-  font-weight: 500;
-  &:first-child {
-    padding-top: 0.8em;
-  }
-`;
-
-const ListItem = styled("li")`
-  list-style: none;
-  margin-bottom: 0.8em;
-`;
 
 
 const Footer = () => {
