@@ -1,0 +1,56 @@
+.MyPham-container {
+
+
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+
+}
+
+.product-container {
+    box-sizing: border-box;
+    /* margin: 0px 180px; */
+
+}
+
+.list-product {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.itemMyPhamimg {
+    width: 300px;
+    height: 300px;
+}
+
+.nameProduct {
+    font-weight: 600;
+}
+
+.button-container {
+    border-radius: 15px;
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed';
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-container:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
