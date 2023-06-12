@@ -4,8 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+// <<<<<<< HEAD:mai-app/src/index.js
 import { Navigate } from 'react-router-dom';
 
+// =======
+// >>>>>>> ef5f231dbb3338553d772e829ac20a01b04bfcaf:src/index.js
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

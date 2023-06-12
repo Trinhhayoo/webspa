@@ -1,0 +1,193 @@
+.ChanMay-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    box-sizing: border-box;
+}
+
+.header-chanmay {
+    justify-content: center;
+    margin-top: -15px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(129, 148, 135);
+}
+
+.PXTM {
+    text-align: center;
+
+}
+
+.Hour-active {
+    text-align: center;
+}
+
+.PhunXam {
+    padding: 50px 0px;
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: [start anh-start] 5fr [anh-end border-start] 4fr [border-end end];
+    grid-template-rows: [start text1-start] auto [text1-end text2-start] auto [end text2-end];
+    grid-row-gap: 0.5rem;
+}
+
+.content-container {
+    box-sizing: border-box;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.itemPx {
+   
+    /* Center the contents of the grid items. Making each grid item a Flex Container */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* Horizontal and Vertical centering */
+    justify-content: center;
+    align-items: center;
+    border: 5px;
+    margin-right:-150px;
+    border-radius: 3px;
+    font-size: 17px;
+    /* font-family: sans-serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* font-weight: bold; */
+    /* background-color: #1c57b5 */
+}
+
+
+.shortcode_hlight {
+    background: #f7e6c6;
+    padding: 20px 30px;
+    padding-bottom: 10px;
+    border-left: 4px solid #c49c51;
+    text-align: justify;
+    margin: 20px 30px;
+    font-size: 17px;
+}
+.img-pm {
+    padding-top: 30px;
+    /* margin-left: 200px; */
+    width: 400px;
+    height: 300px;
+}
+
+.img-behind-pm {
+    padding-top: 30px;
+    padding-right: 10px;
+    /* margin-left: 200px; */
+    width: auto;
+    height: 300px;
+}
+
+.wrap-px {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-right: 150px;
+}
+
+.soiXam {
+    padding: 50px 0px;
+    display: grid;
+
+    width: 100%;
+    grid-template-columns: [start anh-start] 4fr [anh-end border-start] 5fr [border-end end];
+    grid-template-rows: [start text1-start] auto [text1-end text2-start] auto [end text2-end];
+    grid-row-gap: 0.5rem;
+}
+
+.anh-sx {
+    text-align: right;
+
+}
+
+.itemSX {
+    font-size: 18px;
+    margin-left: -150px;
+
+    /* Horizontal and Vertical centering */
+    /* justify-content: center; */
+    /* align-items: center; */
+    border: 5px;
+    border-radius: 3px;
+    /* font-size: 2em; */
+    /* font-family: sans-serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* font-weight: bold; */
+}
+
+.img-sx {
+    padding-top: 30px;
+
+    width: 400px;
+
+    height: 300px;
+}
+
+.img-behind-sx {
+    padding-top: 30px;
+    padding-left: 10px;
+    /* margin-left: 200px; */
+    width: auto;
+    height: 300px;
+}
+
+.wrap-sx {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-left: 150px;
+}
+
+.title-cm {
+    font-size: 20px;
+}
+
+.para-cm {
+    font-size: 20px;
+}
+
+.shortcode_node {
+    border: 1.5px solid rgb(8, 109, 186);
+    /* margin: 0 auto; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: justify;
+    padding: 15px;
+    padding-left: 40px;
+    margin: 50px;
+    
+}
+
+.space {
+
+    margin-bottom: 1.5em;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+
+}
+
+.Uu-diem {
+   margin: 10px 5px;
+    font-size:larger;
+   
+
+}
+.shortcode_node {
+    border: 1px solid #6c6b67;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: justify;
+    padding: 15px;
+    padding-left: 40px;
+}
